@@ -1,0 +1,56 @@
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: black;
+  height: 50px;
+}
+
+.logo {
+  color: white;
+  width: 50%;
+  font-size: 25px;
+}
+
+.menu {
+  width: 50%;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+li {
+  list-style: none;
+  color: wheat;
+  margin: 40px;
+}
+
+main {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px 20px 30px 20px;
+}
+
+.left {
+  width: 70%;
+  height: 400px;
+  background-color: #ccffff;
+}
+
+.right {
+  background-color: #66ccff;
+  width: 30%;
+  height: 400px;
+}
+
+footer {
+  background-color: black;
+  color: wheat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  height: 50px;
+}
