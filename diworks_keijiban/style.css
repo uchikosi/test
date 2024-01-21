@@ -1,0 +1,144 @@
+#logo {
+  width: 30%;
+  margin: 0px 30px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.error_message {
+  color: red;
+  margin-top: 5px;
+}
+
+#menu {
+  background-color: black;
+  color: wheat;
+}
+
+#menu ul {
+  background-color: black;
+  color: wheat;
+  display: flex;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+#menu ul li {
+  margin: 10px 60px;
+}
+
+main {
+  display: flex;
+}
+
+#books {
+  border-left: 3px solid black;
+  border-bottom: 2px solid black;
+  margin: 0px 0px 16px 10px;
+}
+
+.form {
+  border-left: 3px solid red;
+  margin: 10px;
+  padding: 0 5px;
+}
+
+#left {
+  width: 80%;
+  margin-right: 10px;
+}
+
+.main_title {
+  margin-left: 10px;
+  background-color: rgba(192, 192, 192, 0.50);
+  padding: 1%;
+}
+
+#error {
+  color: red;
+}
+
+.leftmain {
+  margin-left: 10px;
+  background-color: rgba(192, 192, 192, 0.50);
+  padding: 1%;
+  border: 2px solid #D3D3D3;
+}
+
+.leftmain div {
+  margin: 1% 1%;
+}
+
+.leftmain form div.post_button input {
+  background-color: grey;
+  color: wheat;
+}
+
+.leftmain p {
+  margin: 0px 0px 16px 10px;
+}
+
+.kiji {
+  background-color: rgba(192, 192, 192, 0.50);
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  padding: 1%;
+  border: 2px solid #D3D3D3;
+}
+
+.contents {
+  margin: 0 1%;
+}
+
+.kiji h3 {
+  width: 98%;
+  border-bottom: 2px solid black;
+  border-color: rgba(192, 192, 192, 0.50);
+  margin-top: 0px;
+  margin-left: auto;
+  /* borderを中央寄せにするため */
+  margin-right: auto;
+  /* borderを中央寄せにするため */
+}
+
+.handlename {
+  margin-top: 1%;
+}
+
+textarea {
+  width: 60%;
+}
+
+#right {
+  width: 20%;
+  margin-left: 10px;
+}
+
+.rightmain {
+  margin-right: 20px;
+}
+
+.topiX {
+  border-bottom: 3px solid;
+  border-color: rgba(192, 192, 192, 0.50);
+}
+
+li {
+  list-style: none;
+}
+
+footer {
+  background-color: black;
+  color: wheat;
+  margin: 0px;
+  padding: 5px;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px;
+
+}

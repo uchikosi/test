@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>演習２</title>
+</head>
+<body>
+  <form>
+    <select name="todofuken"><!--セレクトBOX -->
+      <option value="error">選択してください</option><!--選択肢 -->
+      <option value="001">東京</option>
+      <option value="002">神奈川</option>
+      <option value="003">千葉</option>
+      <option value="004">埼玉</option>
+    </select>
+  </form>
+
+  <form>
+    <select name="age">
+      <option>選択してください</option>
+      <script>
+        for (var i = 18; i <= 65; i++) {
+          document.write("<option>");
+          document.write(i);
+          document.write("</option>");
+          // document.write(`<option>${i}</option>`);
+          // ＄{}　テンプレート文字列（Template Literal）文字列の中で変数や式を埋め込むための構文
+        };
+      </script>
+    </select>
+  </form>
+  </form>
+
+</body>
+</html>
