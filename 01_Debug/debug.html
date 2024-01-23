@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta>
+  <title>test</title>
+  <script type="text/javascript">
+    function toOneDimension(previousValue, currentValue) {
+      // return previousValue.concat(currentValue);
+      // concatメソッドは2以上の配列を結合して新しい配列を作る
+      // previousValue(第一引数)：currentValueよりもひとつ前の要素（前回の処理結果）
+      // currentValue(第二引数)：現在処理されている要素
+
+      // // 各サブ配列を逆順に結合
+      return currentValue.concat(previousValue);
+      // こちらのコード行では、previousValue が先に、currentValue が後になるように配列を結合しています。つまり前回までの処理結果が現在の要素の後ろに結合されます。
+    }
+    console.log(toOneDimension);
+
+    // 多次元配列(配列の中にさらに配列がはいっている状態)を表しています。
+    var sampleArrayA = [
+      ['A1', 'A2', 'A3'],
+      ['B1', 'B2', 'B3'],
+      ['C1', 'C2', 'C3']
+    ];
+
+    console.log(sampleArrayA);
+
+    var sampleArrayB = sampleArrayA.reduce(toOneDimension);
+    // reduce メソッドを使って、sampleArrayA を toOneDimension 関数（concatメソッド）を用いて一次元の配列に変換します。sampleArrayB はこの一次元の配列です。
+    // サブ配列
+    console.log(sampleArrayB);
+    for (var counterVar = 0; counterVar < sampleArrayB.length; counterVar++) {
+      // ページに表示するための文字列を書き出し
+      document.write('sampleArrayB[' + counterVar + ']: ');
+      // sampleArrayB の現在の値を書き出します。
+      document.write(sampleArrayB[counterVar]);
+      // 改行を追加して、次の値が新しい行に表示
+      document.write('<br />');
+    }
+  </script>
+</head>
+<body>
+  <!-- return currentValue.concat(previousValue); -->
+  <!-- 配列.reduce(callback関数, 初期値) -->
+  <!-- currentValue: 現在の要素（第2引数）です。 -->
+  <!-- previousValue: これまでの処理で生成された結果（第1引数）です。 -->
+  <!-- concat メソッドは、元の配列に新しい要素を追加して新しい配列を作成します。concat を使ってこれらを逆順に結合しているため、新しい配列ができます。 -->
+
+  <!-- reduce()は配列に対して適用され、結果を蓄積していくメソッドです。
+    reduce()は対象となる配列に対して任意の関数を実行することができます。-->
+  <!-- 配列.reduce(function(累積値, 要素) { }) -->
+
+  <!-- 第1引数の「累積値」コールバック関数には、配列要素を順番に処理していった値が格納されます。第2引数の「要素」初期値 は現在処理されている配列要素を意味しています。この関数内で「return」を使い、任意の処理を返すことで累積値に結果が保持され取得できる。 -->
+
+</body>
+</html>
