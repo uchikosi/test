@@ -9,34 +9,42 @@
       // concatメソッドは2以上の配列を結合して新しい配列を作る
       // previousValue(第一引数)：currentValueよりもひとつ前の要素（前回の処理結果）
       // currentValue(第二引数)：現在処理されている要素
-
-      // // 各サブ配列を逆順に結合
+      console.log(previousValue);
+      console.log(currentValue);
+      // // 配列を逆順に結合
       return currentValue.concat(previousValue);
       // こちらのコード行では、previousValue が先に、currentValue が後になるように配列を結合しています。つまり前回までの処理結果が現在の要素の後ろに結合されます。
     }
-    console.log(toOneDimension);
 
     // 多次元配列(配列の中にさらに配列がはいっている状態)を表しています。
     var sampleArrayA = [
       ['A1', 'A2', 'A3'],
       ['B1', 'B2', 'B3'],
-      ['C1', 'C2', 'C3']
+      ['C1', 'C2', 'C3'],
+      // ['D1', 'D2', 'D3']
     ];
 
     console.log(sampleArrayA);
 
     var sampleArrayB = sampleArrayA.reduce(toOneDimension);
-    // reduce メソッドを使って、sampleArrayA を toOneDimension 関数（concatメソッド）を用いて一次元の配列に変換します。sampleArrayB はこの一次元の配列です。
-    // サブ配列
+    // reduce メソッドを使って、sampleArrayA をtoOneDimension 関数（concatメソッド）を用いて結果を蓄積していく
+
     console.log(sampleArrayB);
     for (var counterVar = 0; counterVar < sampleArrayB.length; counterVar++) {
-      // ページに表示するための文字列を書き出し
       document.write('sampleArrayB[' + counterVar + ']: ');
-      // sampleArrayB の現在の値を書き出します。
       document.write(sampleArrayB[counterVar]);
-      // 改行を追加して、次の値が新しい行に表示
       document.write('<br />');
     }
+
+    // var array1 = ['sa', 'mu'];
+    // var array2 = ['ra', 'i'];
+    // var array3 = ['ju', 'ku'];
+    // var result = array1.concat(array2, array3);
+    // let result2 = array3.concat(array1, array2);
+
+    // console.log(result);
+    // console.log(result2);
+
   </script>
 </head>
 <body>
